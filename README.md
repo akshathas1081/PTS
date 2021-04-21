@@ -84,7 +84,7 @@ Note: I added the dump file. If creation/insertion from jar fails can be used.
 
 ## Screenshots
 
-![PDF file](secreenshots.pdf)
+[PDF file](secreenshots.pdf)
 
 ## Built With
 
