@@ -25,10 +25,18 @@ public class LoginController {
 
     private String mail,pass;
 
+//    @FXML
+//    private Scene scene;
+
     @FXML
     public void initialize() {
         dbm = DBmanager.getInstance();
+//        loadStylesheet(); // Call method to load the CSS stylesheet
     }
+
+//    private void loadStylesheet() {
+//        scene.getStylesheets().add(getClass().getResource("/View/styles.css").toExternalForm());
+//    }
 
     public void randomBtn(ActionEvent event) {
         Login login = dbm.getRandomLogin();
@@ -42,11 +50,10 @@ public class LoginController {
 
         if (dbm.login(mail, pass)) {
             changeScene();
-        }else {
+        } else {
             AlertOp.error("Login Error", "An error occurred while logging in",
                     "Email or Password is wrong!");
         }
-
     }
 
     private void changeScene() {
@@ -59,9 +66,8 @@ public class LoginController {
             e.printStackTrace();
         }
 
-        Stage stage = Launcher.getStage();
+        Stage stage = (Stage) tfMail.getScene().getWindow(); // Get the current stage
         stage.setScene(new Scene(root));
         stage.show();
     }
-
 }
