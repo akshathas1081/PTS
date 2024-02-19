@@ -21,7 +21,7 @@
          <children>
             <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" style="-fx-margin:100px;">
                <image>
-                  <Image url="@../icons/user.png" />
+                  <Image url="@../icons/userWhite.png" />
                </image>
             </ImageView>
             <HBox alignment="CENTER">
@@ -37,16 +37,16 @@
                         <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Label text="E-mail :" textFill="ghostwhite" style="-fx-font-weight: bold;"/>
-                        <TextField fx:id="tfMail" prefColumnCount="16" GridPane.columnIndex="1" />
-                        <Label text="Password :" GridPane.rowIndex="1" textFill="ghostwhite" style="-fx-font-weight: bold;" />
-                        <HBox alignment="CENTER_RIGHT" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <Label prefHeight="40" />
+                        <TextField fx:id="tfMail" promptText="Enter Your Email" prefColumnCount="30" prefHeight="35" GridPane.columnIndex="1" style="-fx-prompt-text-fill: #435B66;-fx-alignment: center;-fx-font-weight: bold;" />
+                        <Label  GridPane.rowIndex="1" textFill="ghostwhite" style="-fx-font-weight: bold;" prefHeight="40" />
+                        <HBox alignment="CENTER"  spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <children>
-                              <Button fx:id="randomBtn" mnemonicParsing="false" onAction="#randomBtn" text="Random User" style="-fx-background-color: #0000FF; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;" textFill="ghostwhite" />
-                              <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#loginBtn" text="Login" style="-fx-background-color: #068932;-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;" textFill="ghostwhite"/>
+                              <Button fx:id="randomBtn" mnemonicParsing="false"  prefHeight="35" onAction="#randomBtn" text="Random User" style="-fx-background-color: #0000FF; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;-fx-margin: 100;" textFill="ghostwhite" />
+                              <Button fx:id="loginBtn" mnemonicParsing="false" prefHeight="35" onAction="#loginBtn" text="Login" style="-fx-background-color: #068932;-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold; -fx-margin: 100;" textFill="ghostwhite"/>
                            </children>
                         </HBox>
-                        <PasswordField fx:id="pf" prefColumnCount="16" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <PasswordField fx:id="pf" promptText="Enter the Password" prefColumnCount="30" prefHeight="35" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-prompt-text-fill: #435B66;-fx-alignment: center;-fx-font-weight: bold;"  />
                      </children>
                   </GridPane>
                </children>

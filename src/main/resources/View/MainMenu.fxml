@@ -18,7 +18,7 @@
                <children>
                   <Button fx:id="userBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#userBtn" text="User Info" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 ); -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/user.png" />
                            </image>
@@ -27,7 +27,7 @@
                   </Button>
                   <Button fx:id="cardBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#cardBtn" text="Card Info" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 ); -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/card.png" />
                            </image>
@@ -36,7 +36,7 @@
                   </Button>
                   <Button fx:id="stopBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#stopBtn" text="Stop Info" style= "-fx-background-color:#F5F5F5;-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/stop.png" />
                            </image>
@@ -45,7 +45,7 @@
                   </Button>
                   <Button fx:id="routeBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#routeBtn" text="Route Info" style="-fx-background-color:#F5F5F5;-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/route.png" />
                            </image>
@@ -54,7 +54,7 @@
                   </Button>
                   <Button fx:id="transportBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#transportBtn" text="Transport Info" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/transport.png" />
                            </image>
@@ -67,7 +67,7 @@
                <children>
                   <Button fx:id="writeBtn" contentDisplay="TOP" layoutX="182.0" layoutY="10.0" mnemonicParsing="false" onAction="#writeBtn" text="Write Review" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/writeR.png" />
                            </image>
@@ -76,7 +76,7 @@
                   </Button>
                   <Button fx:id="readBtn" contentDisplay="TOP" layoutX="315.0" layoutY="10.0" mnemonicParsing="false" onAction="#readBtn" text="Read Review" style="-fx-background-color:#F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/readR.png" />
                            </image>
@@ -85,7 +85,7 @@
                   </Button>
                   <Button fx:id="logoutBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#logoutBtn" text="Logout" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 ); -fx-font-weight: bold;  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/logout.png" />
                            </image>

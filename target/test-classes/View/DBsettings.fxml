@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.DBsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.DBsController" style="-fx-background-color:#111621;">
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
@@ -32,11 +32,11 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="Username" />
-                        <Label text="Password" GridPane.rowIndex="1" />
-                        <TextField fx:id="tfUser" text="root" GridPane.columnIndex="1" />
+                        <Label text="User_name :" textFill="ghostwhite"  style="-fx-font-weight: bold;" />
+                        <Label text="Password :" GridPane.rowIndex="1" textFill="ghostwhite" style="-fx-font-weight: bold;"/>
+                        <TextField fx:id="tfUser" text="root" GridPane.columnIndex="1"/>
                         <PasswordField fx:id="pf" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Port" GridPane.rowIndex="2" />
+                        <Label text="Port :" GridPane.rowIndex="2" textFill="ghostwhite" style="-fx-font-weight: bold;"/>
                         <TextField fx:id="tfPort" text="3306" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                      </children>
                   </GridPane>
@@ -44,12 +44,12 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
                <children>
-                  <Button fx:id="connectBtn" mnemonicParsing="false" onAction="#connectBtn" text="Connect" />
-                  <Button fx:id="createBtn" disable="true" mnemonicParsing="false" onAction="#createBtn" text="Create DB" />
-                  <Button fx:id="insertBtn" disable="true" mnemonicParsing="false" onAction="#insertBtn" text="Insert DB" />
+                  <Button fx:id="connectBtn" mnemonicParsing="false" onAction="#connectBtn" text="Connect" style="-fx-background-color: #0000FF; -fx-font-weight: bold;" textFill="ghostwhite"/>
+                  <Button fx:id="createBtn" disable="true" mnemonicParsing="false" onAction="#createBtn" text="Create DB" style="-fx-background-color: white;  -fx-font-weight: bold;" />
+                  <Button fx:id="insertBtn" disable="true" mnemonicParsing="false" onAction="#insertBtn" text="Insert DB" style="-fx-background-color: white;  -fx-font-weight: bold;" />
                </children>
             </HBox>
-            <Button fx:id="appBtn" disable="true" mnemonicParsing="false" onAction="#appBtn" text="Changeover to the App" />
+            <Button fx:id="appBtn" disable="true" mnemonicParsing="false" onAction="#appBtn" text="Changeover to the App" style="-fx-background-color: #068932;-fx-font-weight: bold;" textFill="ghostwhite"/>
          </children>
       </VBox>
    </center>

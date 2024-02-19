@@ -10,51 +10,51 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.MainMenuController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top,#111621,#c5c9cc); -fx-effect: dropshadow( gaussian , rgba(255, 255, 255, 0.75) , 10,0,0,1 );" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.MainMenuController">
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="TOP_CENTER" spacing="10.0">
                <children>
-                  <Button fx:id="userBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#userBtn" text="User Info">
+                  <Button fx:id="userBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#userBtn" text="User Info" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 ); -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/user.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="cardBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#cardBtn" text="Card Info">
+                  <Button fx:id="cardBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#cardBtn" text="Card Info" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 ); -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/card.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="stopBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#stopBtn" text="Stop Info">
+                  <Button fx:id="stopBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#stopBtn" text="Stop Info" style= "-fx-background-color:#F5F5F5;-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/stop.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="routeBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#routeBtn" text="Route Info">
+                  <Button fx:id="routeBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#routeBtn" text="Route Info" style="-fx-background-color:#F5F5F5;-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/route.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="transportBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#transportBtn" text="Transport Info">
+                  <Button fx:id="transportBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#transportBtn" text="Transport Info" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/transport.png" />
                            </image>
@@ -65,27 +65,27 @@
             </HBox>
             <HBox alignment="BOTTOM_CENTER" spacing="10.0">
                <children>
-                  <Button fx:id="writeBtn" contentDisplay="TOP" layoutX="182.0" layoutY="10.0" mnemonicParsing="false" onAction="#writeBtn" text="Write Review">
+                  <Button fx:id="writeBtn" contentDisplay="TOP" layoutX="182.0" layoutY="10.0" mnemonicParsing="false" onAction="#writeBtn" text="Write Review" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/writeR.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="readBtn" contentDisplay="TOP" layoutX="315.0" layoutY="10.0" mnemonicParsing="false" onAction="#readBtn" text="Read Review">
+                  <Button fx:id="readBtn" contentDisplay="TOP" layoutX="315.0" layoutY="10.0" mnemonicParsing="false" onAction="#readBtn" text="Read Review" style="-fx-background-color:#F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/readR.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="logoutBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#logoutBtn" text="Logout">
+                  <Button fx:id="logoutBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#logoutBtn" text="Logout" style="-fx-background-color: #F5F5F5; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 ); -fx-font-weight: bold;  -fx-font-weight: bold;">
                      <graphic>
-                        <ImageView fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/logout.png" />
                            </image>
@@ -97,7 +97,7 @@
          </children></VBox>
    </center>
    <top>
-      <VBox alignment="TOP_CENTER" prefHeight="140.0" prefWidth="100.0" style="-fx-background-color: rgb(66, 74, 81);" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" prefHeight="140.0" prefWidth="100.0" style="-fx-background-color: #111621 ;-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,0,1 );" BorderPane.alignment="CENTER">
             <HBox alignment="BASELINE_CENTER">
                 <children>
                     <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
@@ -105,7 +105,7 @@
                             <Image url="@../icons/logoWhite.png" />
                         </image>
                     </ImageView>
-                    <Label text="PTS" textFill="WHITE">
+                    <Label text="PTS" textFill="WHITE"  style=" -fx-font-weight: bold;">
                         <font>
                             <Font size="64.0" />
                         </font>
@@ -115,7 +115,7 @@
                <Insets top="10.0" />
             </padding>
             </HBox>
-            <Label text="Go Beyond." textFill="WHITE">
+            <Label text="Travel Safe." textFill="WHITE">
                 <font>
                     <Font name="System Italic" size="18.0" />
                 </font>

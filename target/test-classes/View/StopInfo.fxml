@@ -16,7 +16,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.StopInfoController">
    <center>
-      <VBox alignment="TOP_CENTER" style="-fx-border-color: rgb(66, 74, 81);" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" style="-fx-background-color: linear-gradient(to bottom,black,#111621,#c5c9cc);" BorderPane.alignment="CENTER">
          <children>
             <TabPane tabClosingPolicy="UNAVAILABLE">
               <tabs>
@@ -24,12 +24,12 @@
                      <content>
                         <VBox alignment="CENTER">
                            <children>
-                              <Label text="Routes that includes this stop" textFill="#424e51">
+                              <Label text="Routes that includes this stop" textFill="ghostwhite">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
                               </Label>
-                              <Separator maxWidth="320.0" style="-fx-background-color: rgb(66, 74, 81);">
+                              <Separator maxWidth="320.0" style="-fx-background-color: ghostwhite;">
                                  <VBox.margin>
                                     <Insets bottom="10.0" />
                                  </VBox.margin>
@@ -71,7 +71,7 @@
          </BorderPane.margin></VBox>
    </center>
    <right>
-      <VBox alignment="TOP_CENTER" prefWidth="220.0" spacing="10.0" style="-fx-background-color: rgb(66, 74, 81);" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" prefWidth="220.0" spacing="10.0" style="-fx-background-color: linear-gradient(to bottom,black,#111621,#c5c9cc);" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="BASELINE_LEFT">
                <children>
@@ -124,7 +124,7 @@
          </children></VBox>
    </right>
    <left>
-      <HBox alignment="CENTER" onMouseClicked="#backBtn" prefWidth="30.0" style="-fx-background-color: Black;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" onMouseClicked="#backBtn" prefWidth="30.0" style="-fx-background-color: linear-gradient(to bottom,black,#111621);"  BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="150.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                <image>
