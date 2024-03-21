@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class UserInfoController {
+public class  UserInfoController {
 
     private DBmanager dbm;
     private User user;

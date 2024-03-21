@@ -16,7 +16,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
+import java.lang.*;
 
 public class StopInfoController {
 
@@ -29,7 +30,8 @@ public class StopInfoController {
 
     @FXML
     private ListView<Route> lvRoute;
-    @FXML ListView<String> lvAddress;
+    @FXML
+    private ListView<String> lvAddress;
 
     @FXML
     private Label lblName;
@@ -85,25 +87,37 @@ public class StopInfoController {
     }
 
     private void setLvAddress(Stop stop) {
-        int x1 = stop.getAddress().getCoorX();
-        int y1 = stop.getAddress().getCoorY();
+        double x1 = stop.getAddress().getCoorX();
+        double y1 = stop.getAddress().getCoorY();
         List<Address> addressList = UserInfo.getPassenger().getAddressList();
         List<String> items = new LinkedList<>();
         if (!addressList.isEmpty()) {
-            for (Address address: addressList) {
+            for (Address address : addressList) {
                 String item = address.getTown() + "/"
                         + address.getNeighborhood() + "/"
                         + address.getStreet() + "/"
                         + address.getNumber() + " ";
-                int x2 = address.getCoorX();
-                int y2 = address.getCoorY();
+                double x2 = address.getCoorX();
+                double y2 = address.getCoorY();
 
-                long dist = Math.round(Math.sqrt(Math.abs((x1 - x2)*(x1 - x2) - (y1 - y2)*(y1 - y2))));
-                item += "| Distance : " + dist + "m";
+                double dist = haversine(x1, y1, x2, y2);
+                item += "| Distance : " + Math.round(dist * 1000) + "m"; // Convert distance to meters
                 items.add(item);
             }
         }
         lvAddress.getItems().setAll(items);
     }
 
+    // Haversine formula to calculate distance between two points given their latitude and longitude
+    private double haversine(double lat1, double lon1, double lat2, double lon2) {
+        final double R = 6371; // Radius of the Earth in kilometers
+        double dLat = Math.toRadians(lat2 - lat1);
+        double dLon = Math.toRadians(lon2 - lon1);
+        double a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2)) *
+                        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        double distance = R * c;
+        return distance;
+    }
 }

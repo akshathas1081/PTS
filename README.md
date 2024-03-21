@@ -12,7 +12,7 @@ With the help of PTS:
 *	Users can learn estimated travel times.
 *	Users can learn the vehicle's operating / malfunction status.
 *	Users can learn the capacity of the vehicle.
-*	Users will have private account reached via email and secured by a password.
+*Users will have private account reached via email and secured by a password.	
 *	Users can learn the balance of their travel card.
 *	Users can learn about their travel cards expiry date.
 *	Users can see the total number of travels.
